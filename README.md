@@ -1,17 +1,13 @@
-This project evaluates the intersection of predictive modeling and algorithmic ethics within the financial sector. It audits automated credit scoring systems to detect and mitigate demographic biases, ensuring that data-driven lending remains both accurate and equitable.
+I built a financial audit system that checks if bank loan algorithms are fair. My goal was to see if the automated system rejects people based on their gender rather than their actual financial merit.
 
-Technical Implementation:
+What I Did (Step by Step):
+1. Data Engineering (SQL)
+I took a messy list of 500 bank records and organized them into a professional database. I used advanced 'Window Functions' to rank every person by their credit score, allowing me to compare the best male candidates directly against the best female candidates.
 
-*SQL: Executes data engineering and extraction from relational databases, utilizing complex aggregations and window functions to structure raw financial histories.
+2. Statistical Audit (RStudio)
+I ran a 'Logistic Regression' model to find the hidden patterns in approvals. This allowed me to prove mathematically if a person's gender was influencing the bank's decision more than it should.
 
-*RStudio: Serves as the analytical core for implementing Logistic Regression models and statistical fairness tests to identify disparities in credit approval rates.
+3. Business Intelligence (Excel)
+I turned all that complex math into a simple, interactive dashboard. Now, a manager doesn't need to know code; they can just look at the charts to see the risk of bias and simulate 'what-if' scenarios in real-time.
 
-*Excel: Provides a high-level Business Intelligence interface, transforming econometric outputs into interactive dashboards for risk management and "What-if" scenario simulation.
-
-Key Deliverables:
-
-*Relational database schema for financial risk assessment.
-
-*Statistical audit report on algorithmic neutrality.
-
-*Interactive executive dashboard for real-time decision support.
+Basically, I created a bridge between raw data and ethical banking. I showed that we can use technology to make sure credit is given to people who deserve it, ensuring the system is both profitable for the bank and fair for the customers.
